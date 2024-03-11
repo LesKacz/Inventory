@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap')
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Fredoka", cursive;
+    background-image: linear-gradient(to right,#9ef546, #8435cf); 
+    color:rgb(212, 226, 227);
+    } 
+
+    .container{
+        
+        width:95%;
+        margin:auto;
+    }  
+    /*Displays title left box right*/
+    .nav{
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .nav h2{
+        font-size: 2rem;
+    }
+    /*holds the input box*/
+    .user-input{
+        
+        width: 350px;
+        text-align: center;
+    }
+    /*input box itself*/
+ .user-input input{
+    width:75%;
+    outline: none;
+    padding: 8px;
+    border: 1px solid rgb(57, 250, 57);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 5px;
+    /*no outline auto*/
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+ }  /* box shadow*/
+.user-input input:focus{
+    box-shadow: 0 0 10px #d664f3;
+    border: 2px solid rgb(229, 229, 236);
+}
+/* give hand effect on box*/
+.user-input button{
+    cursor: pointer;
+    padding: 8px;
+    width: fit-content;
+    transition: 1s;
+    outline: none;
+    background-color: rgb(247, 71, 247);
+    border: 2px solid rgb(142, 5, 133);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;   
+}
+
+.user-input button: hover{
+    background-color: transparent;
+    color: white;   
+}
+
+.to-do-items{
+    width: 500px;
+    margin: auto;   
+}
+
+.item{
+    background-color: rgb(248, 169, 248);
+    display: flex;  
+    justify-content: space-between;
+    width: 95%;
+    height: auto;
+    border-radius: 2px;
+    padding: 16px;
+    color: black;
+    margin-top: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+
+.item:hover{
+    box-shadow: 0 0 20px #eaf0f8;
+    border: 1px solid #3581eb;
+}
+/*icons*/
+.item i{
+  cursor: pointer;
+  margin: 0 5px;  
+} 
+/* looks on phone*/ 
+@media(max-width:768px){
+    .nav{
+        align-items: center;
+        flex-direction: column;      
+    }
+    /*spread from info box*/
+ .nav h2{
+margin: 10px 0;
+}
+
+.user-input{
+    width: 100%
+}
+
+.to-do-items{
+    width: 100%;   
+}
+}
+//input box 
+@media(max-width:480px){
+    .user-input input{
+    width:74%;
+
+}
+}
+@media(max-width:320px){
+    .user-input input{
+    width:60%;
+}
+}
