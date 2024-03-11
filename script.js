@@ -15,6 +15,9 @@ var trashIcon = document.createElement('i');
 
 divParent.className = "item";
 divParent.innerHTML = '<div>' +input.value+ '</div>';
+
+
+
 //make Icons
 checkIcon.className = "fas fa-check-square";
 checkIcon.style.color = "light gray";

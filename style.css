@@ -27,7 +27,7 @@ body{
     }
 
     .nav h2{
-        font-size: 3rem;
+        font-size: 2rem;
     }
     /*holds the input box*/
     .user-input{
@@ -124,7 +124,7 @@ margin: 10px 0;
     width: 100%;   
 }
 }
-//input box 
+/*input box */
 @media(max-width:480px){
     .user-input input{
     width:74%;
@@ -136,3 +136,15 @@ margin: 10px 0;
     width:60%;
 }
 }
+/*
+ .container ol li .remove{
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 24px;
+    height:25px;
+    background: #f00;
+    background-size: cover;
+    border-radius:50%
+
+}*/
